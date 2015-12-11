@@ -24,8 +24,8 @@ object InfraSmartCampus {
       Container("4th floor", EContainerType.Floor, Set(
         EventBased("DOOR_SPARKS", "onChange", "http://smartcampus.unice.fr/sensors/DOOR_SPARKS/data/", SC_opening),
         Container("Coffee corner", EContainerType.OpenSpace, Set(
-          Periodic("LIGHT_CAFE", 30, "http://smartcampus.unice.fr/sensors/LIGHT_CAFE/data/", SC_light),
-          Periodic("TEMP_CAFEV", 30, "http://smartcampus.unice.fr/sensors/TEMP_CAFEV/data/", SC_temperature_indoor),
+          Periodic("LIGHT_CAFE", 300, "http://smartcampus.unice.fr/sensors/LIGHT_CAFE/data/", SC_light),
+          Periodic("TEMP_CAFEV", 300, "http://smartcampus.unice.fr/sensors/TEMP_CAFEV/data/", SC_temperature_indoor),
           EventBased("Window_Coffee", "onChange", "http://smartcampus.unice.fr/sensors/Window_Coffee/data/", SC_opening),
           EventBased("Coffee_machine_power", "onRaise", "http://smartcampus.unice.fr/sensors/Coffee_machine_power/data/", SC_power)
         )),
@@ -41,8 +41,9 @@ object InfraSmartCampus {
           )),
           Container("Office 443", EContainerType.Room, Set(
             EventBased("DOOR443STATE", "onChange", "http://smartcampus.unice.fr/sensors/DOOR443STATE/data/", SC_opening),
-            Periodic("TEMP_443V", 30, "http://smartcampus.unice.fr/sensors/TEMP_442V/data/", SC_temperature_indoor),
-            Periodic("AC_443", 30, "http://smartcampus.unice.fr/sensors/AC_443/data/", SC_temperature_indoor),
+            Periodic("LIGHT_443", 300, "http://smartcampus.unice.fr/sensors/LIGHT_443/data", SC_light),
+            Periodic("TEMP_443V", 300, "http://smartcampus.unice.fr/sensors/TEMP_442V/data/", SC_temperature_indoor),
+            Periodic("AC_443", 300, "http://smartcampus.unice.fr/sensors/AC_443/data/", SC_temperature_indoor),
             EventBased("WINDOW443STATE", "onChange", "http://smartcampus.unice.fr/sensors/WINDOW443STATE/data/", SC_opening),
             EventBased("PRESENCE_443", "onChange", "http://smartcampus.unice.fr/sensors/PRESENCE_443/data/", SC_opening),
             EventBased("Coffee_power", "onRaise", "http://smartcampus.unice.fr/sensors/Coffee_power/data/", SC_power),
@@ -53,7 +54,8 @@ object InfraSmartCampus {
             Periodic("LIGHT_444", 300, "http://smartcampus.unice.fr/sensors/LIGHT_444/data/", SC_light)
           )),
           Container("Office 445", EContainerType.Room, Set(
-            Periodic("TEMP_445V", 300, "http://smartcampus.unice.fr/sensors/TEMP_445V/data/", SC_temperature_indoor)
+            Periodic("TEMP_445V", 300, "http://smartcampus.unice.fr/sensors/TEMP_445V/data/", SC_temperature_indoor),
+            Periodic("LIGHT_445", 300, "http://smartcampus.unice.fr/sensors/LIGHT_445/data", SC_light)
           )),
           Container("Office 449", EContainerType.Room, Set(
             Periodic("TEMP_449V", 300, "http://smartcampus.unice.fr/sensors/TEMP_449V/data/", SC_temperature_indoor)

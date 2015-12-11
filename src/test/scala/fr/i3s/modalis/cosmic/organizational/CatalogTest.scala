@@ -18,11 +18,11 @@ class CatalogTest extends SpecificationWithJUnit {
     }
 
     "return sensors contained in a container" in {
-      catalog.getSensors("Modalis corridor").map(_.name) must be equalTo  Set("Window_Modalis", "TEMP_CORRIDOR", "NOISE_SPARKS_CORRIDOR", "TEMP_442V", "DOOR443STATE", "TEMP_443V", "AC_443", "WINDOW443STATE", "PRESENCE_443", "Coffee_power", "Office_443_Power", "TEMP_444V", "LIGHT_444", "TEMP_445V", "TEMP_449V")
+      catalog.getSensors("Modalis corridor").map(_.name) must be equalTo  Set("Window_Modalis", "TEMP_CORRIDOR", "NOISE_SPARKS_CORRIDOR", "TEMP_442V", "DOOR443STATE", "TEMP_443V", "AC_443", "WINDOW443STATE", "PRESENCE_443", "Coffee_power", "Office_443_Power", "TEMP_444V", "LIGHT_444", "TEMP_445V", "TEMP_449V", "LIGHT_443", "LIGHT_445")
     }
 
     "return sensors handling a specific observation" in {
-      catalog.getSensors(InfraSmartCampus.SC_light).map(_.name) must be equalTo Set("LIGHT_CAFE", "LIGHT_444")
+      catalog.getSensors(InfraSmartCampus.SC_light).map(_.name) must be equalTo Set("LIGHT_CAFE", "LIGHT_444", "LIGHT_443", "LIGHT_445")
     }
 
     "return a specific sensor" in {
