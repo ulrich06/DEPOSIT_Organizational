@@ -2,10 +2,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>eu.ace-design</groupId>
-	<artifactId>sensingdescription</artifactId>
+	<groupId>eu.ace-design.deposit</groupId>
+	<artifactId>organizational</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
+
+    <developers>
+        <developer>
+            <id>cecchinel</id>
+            <name>Cyril Cecchinel</name>
+            <email>cecchine@3s.unice.fr</email>
+            <url>http://www.i3s.unice.fr/~cecchine</url>
+            <timezone>+2</timezone>
+            <roles>
+                <role>Architect</role>
+                <role>Main Developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>LGPL 3.0</name>
+            <url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
