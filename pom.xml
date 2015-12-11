@@ -6,7 +6,8 @@
 	<artifactId>organizational</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
+    <name>Organizational Model</name>
+    <description>Scala implementation of the DEPOSIT Organizational model</description>
     <developers>
         <developer>
             <id>cecchinel</id>
