@@ -1,4 +1,4 @@
-DEPOSIT Organizational model
+DEPOSIT Organizational model [![Build Status](https://travis-ci.org/ulrich06/DEPOSIT_Organizational.svg?branch=master)](https://travis-ci.org/ulrich06/DEPOSIT_Organizational)
 ============================
 
 Target: **Domain experts**
