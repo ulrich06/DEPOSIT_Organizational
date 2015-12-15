@@ -1,6 +1,5 @@
 package fr.i3s.modalis.cosmic.organizational
 
-import fr.i3s.modalis.cosmic.organizational.sample.InfraSmartCampus
 import org.specs2.mutable.SpecificationWithJUnit
 
 /**
