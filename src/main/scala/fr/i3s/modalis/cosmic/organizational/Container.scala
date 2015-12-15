@@ -8,8 +8,8 @@ import fr.i3s.modalis.cosmic.organizational.EContainerType.EContainerType
 case class Container(name:String, cType:EContainerType, contains:Set[Containable] = Set.empty) extends Containable {
 
   def lookup(what:String):Option[Containable] = {
-
-    if (contains.map{_.name} contains what) contains find {_.name equals what}
+    if (this.name equals what) Some(this)
+    else if (contains.map{_.name} contains what) contains find {_.name equals what}
     else {
       var result:Option[Containable] = None
       contains.collect {case p:Container => p}.toStream.takeWhile(_ => result.isEmpty).foreach(i => result = i.lookup(what))

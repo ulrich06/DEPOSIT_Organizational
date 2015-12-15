@@ -35,6 +35,7 @@ class CatalogTest extends SpecificationWithJUnit {
     "return a specific container" in {
       catalog.getContainer("Office 443") must beSome
       catalog.getContainer("WrongContainerName") must beNone
+      catalog.getContainer("Campus SophiaTech") must beSome
     }
 
     "return containers with a specific type" in {
